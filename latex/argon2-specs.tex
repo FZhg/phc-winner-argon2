@@ -419,7 +419,6 @@ For $t>1$ this strategy uses $0.25$ of memory on average, so the time-area produ
 
 The version 1.3 of Argon2 replaces  overwriting operation with the XOR. This gives minimal overhead on the performance: for memory requirements of 8 MB and higher the performance difference is between 5\% and 15\% depending on the operating system and hardware. For instance, the highest speed of 3-pass Argon2d v.1.2.1 on 1.8 GHz CPU with Ubuntu is 1.61 cycles per byte, whereas for v.1.3 it is 1.7 cpb (both measured for 2 GB of RAM, 4 threads).
 
-In the  version 1.3 this saving strategy applies to the one-pass Argon2i only, where it brings the same time-area product advantage. The multi-pass versions are safe as all the blocks have to be kept in memory till the overwrite. 
 
 \subsection{Attack on iterative compression function}\label{sec:att-iter}
 
